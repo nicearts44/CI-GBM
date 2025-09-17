@@ -49,15 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.toggle('active');
     });
     
-    // Gestion des formulaires
-    const forms = document.querySelectorAll('form');
-    forms.forEach(form => {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Ici, vous ajouterez la logique de soumission des formulaires
-            console.log('Formulaire soumis');
-        });
-    });
+    
     
     // Animation au défilement
     const animateOnScroll = function() {
@@ -174,4 +166,5 @@ function showMessage(message, type = 'success') {
 window.CIGBM = {
     showMessage: showMessage
 };
+
 
