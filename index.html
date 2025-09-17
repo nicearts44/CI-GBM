@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI-GBM - Club d'Ingénierie du Génie Biomédical</title>
+    <meta name="description" content="CI-GBM est un club étudiant innovant qui transforme les idées en solutions concrètes. Rejoignez notre communauté dédiée à l'ingénierie biomédicale et technologique.">
+    <meta name="keywords" content="CI-GBM, génie biomédical, club étudiant, innovation technologique, hackathon, projets étudiants, ingénierie, IoT, systèmes embarqués">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cigbm.netlify.app">
+    <meta property="og:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
+    <meta property="og:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour but de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
+    <meta property="og:image" content="https://cigbm.netlify.app/logo.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cigbm.netlify.app">
+    <meta property="twitter:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
+    <meta property="twitter:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour but de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
+    <meta property="twitter:image" content="https://cigbm.netlify.app/logo.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" sizes="16x16" type="image\png" href="favicon.png">
+    <link rel="icon" sizes="32x32" type="image\png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-img"> <img src="favicon.png" alt="CI-GBM"> </div>
+                </a>
+            </div>
+            
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="nav-overlay" id="nav-overlay">
+            <div class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="nav-overlay-content">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="hackathon.html">Hackathon</a></li>
+                    <li><a href="hall-of-fame.html">Galerie</a></li>
+                    <li><a href="learning-hub.html">Learning Hub</a></li>
+                    <li><a href="events.html">Événements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Club d'Ingénierie du Génie Biomédical</h1>
+            <p>Développez vos compétences techniques, participez à des projets innovants et transformez vos idées en solutions concrètes au sein de notre communauté dédiée à l'innovation technologique et biomédicale.</p>
+            
+            <div class="hero-buttons">
+                <a href="hackathon.html" class="cta-button"><i class="fas fa-rocket"></i> À venir </a>
+                <a href="about.html" class="secondary-button"><i class="fas fa-info-circle"></i> Découvrir le Club</a>
+            </div>
+            
+            <div class="countdown">
+                <h2>MINI-HACKATHON CI-GBM 2025</h2>
+                <div class="countdown-timer">
+                    <div class="countdown-unit">
+                        <div class="countdown-value" id="days">00</div>
+                        <div class="countdown-label">Jours</div>
+                    </div>
+                    <div class="countdown-unit">
+                        <div class="countdown-value" id="hours">00</div>
+                        <div class="countdown-label">Heures</div>
+                    </div>
+                    <div class="countdown-unit">
+                        <div class="countdown-value" id="minutes">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-unit">
+                        <div class="countdown-value" id="seconds">00</div>
+                        <div class="countdown-label">Secondes</div>
+                    </div>
+                
+        </div>
+    </section>
+
+    <section class="about-preview">
+        <div class="container">
+            <div class="section-title">
+                <h2>Qu'est-ce que le CI-GBM?</h2>
+                <p>Découvrez notre mission, nos valeurs et comment nous stimulons l'apprentissage collaboratif et l'innovation estudiantine en réalités tangibles.</p>
+            </div>
+            
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Compétences Techniques</h3>
+                    <p>Développez votre expertise en électronique, programmation, systèmes embarqués, IoT, Modélisation 3D grâce à nos ateliers pratiques et sessions de formations spécialisées.</p>
+                    <a href="learning-hub.html" class="read-more">Explorer les ressources <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Compétitions & Esprit d'équipe </h3>
+                    <p>Participez et démarquez-vous à travers des compétitions inter-filières et inter-écoles. Développez votre esprit d'équipe, renforcez la solidarité et dépassez vos limites dans un cadre stimulant et challengeant.</p>
+                    <a href="hackathon.html" class="read-more">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation & Entrepreneuriat</h3>
+                    <p>Transformez vos idées en solutions concrètes et apprenez à les commercialiser grâce à notre écosystème favorable au leadership, à l'innovation et à la création de startups.</p>
+                    <a href="hall-of-fame.html" class="read-more">Voir les projets <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="center-button">
+                <a href="about.html" class="cta-button">Découvrir notre histoire</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projets d'ateliers pratiques </h2>
+                <p>Découvrez quelques-uns des projets en cours de réalisation </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/project-15.png" alt="Système de détection de chute">
+                        <div class="project-overlay">
+                            <a href="hall-of-fame.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Système de détection de chute</h3>
+                        <p>Dispositif IoT pour la surveillance continue des paramètres vitaux des patients à mobilité réduite.Le dispositif devra détecter les chutes ou mouvements brusques et alerter le personnel soignant via signal sonore.
+</p>
+                        <div class="project-tags">
+                            <span>IoT</span>
+                            <span>Santé</span>
+                            <span>Electronique</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/project-14.png" alt="Mini GMAO local">
+                        <div class="project-overlay">
+                            <a href="hall-of-fame.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mini GMAO local </h3>
+                        <p>Interface web local utilisant des données en local pour assister les techniciens biomédicaux dans la gestion du plateau technique hospitalier </p>
+                        <div class="project-tags">
+                            <span>Front-end Dev</span>
+                            <span>Back-end Dev</span>
+                            <span>Planification</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/project-6.png" alt="Canne intelligente">
+                        <div class="project-overlay">
+                            <a href="hall-of-fame.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Canne intelligente</h3>
+                        <p>Canne pour malvoyant capable d’émettre un signal sonore et une vibration lorsqu'il se trouve à proximité d'obstacles.</p>
+                        <div class="project-tags">
+                            <span>Electronique</span>
+                            <span>3D</span>
+                            <span>Santé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="center-button">
+                <a href="hall-of-fame.html" class="cta-button">Voir tous les projets</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Restez informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités, les annonces d'événements et les ressources exclusives.</p>
+                
+                <form class="newsletter-form" id="newsletter-form" action="https://formsubmit.co/nicephore61@gmail.com" method="POST">
+                    <input type="email" placeholder="Votre adresse email" name="Mail-news" required>
+                    <button type="submit">S'inscrire <i class="fas fa-paper-plane"></i></button>
+                </form>
+                
+                <p class="newsletter-disclaimer">Nous respectons votre vie privée. Vous pouvez vous désinscrire à tout moment.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>CI-GBM</h3>
+                    <p>Rejoignez notre communauté dédiée à l'innovation technologique et biomédicale.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="hackathon.html">Hackathon</a></li>
+                        <li><a href="hall-of-fame.html">Galerie</a></li>
+                        <li><a href="learning-hub.html">Learning Hub</a></li>
+                        <li><a href="events.html">Événements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Ressources</h3>
+                    <ul class="footer-links">
+                        <li><a href="ressources/Charte-CI-GBM.pdf">Charte du club</a></li>
+                        <li><a href="ressources/Description-technique.pdf">Règlement du hackathon</a></li>
+                        <li><a href="ressources/template-readme.html">Template de README</a></li>
+                        <li><a href="learning-hub.html">Tutoriels et guides</a></li>
+                        <li><a href="hall-of-fame.html">Notre galerie</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> +229 01 64 49 19 91</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Université Abomey Calavi, Ecole Polytechnique d'Abomey-Calavi ( EPAC) - Génie Biomédical </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CI-GBM.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+

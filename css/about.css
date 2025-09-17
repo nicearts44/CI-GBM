@@ -1,0 +1,370 @@
+/* about.css - Style moderne pour la page À propos */
+.hero {
+    padding: 12rem 0 6rem;
+    text-align: center;
+    
+    color: white;
+    border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="2" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    opacity: 0.3;
+}
+
+.about-content {
+    padding: 2rem 0;
+}
+
+.about-intro {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    text-align: justify;
+}
+
+.about-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+/* Mission Vision */
+.mission-vision {
+    padding: 1rem 0;
+    background: var(--dark);
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.mv-card {
+    background: var(--dark);
+    padding: 3rem 2.5rem;
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    margin: 1rem;
+
+    
+}
+
+.mv-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+.mv-icon {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.mv-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-dark);
+}
+
+.mv-card p {
+    color: var(--light-gray);
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* Objectives */
+.objectives {
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, var(--dark) 0%, var(--darker) 100%);
+    color: var(--dark);
+}
+
+.objectives h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.objective-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+}
+
+.objective-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.objective-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.objective-item h4::before {
+    content: '✓';
+    color: var(--secondary);
+    font-weight: bold;
+    background: var(--darker);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.objective-item p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Team Section */
+.team-section {
+    padding: 6rem 0;
+    background: var(--darker);
+    text-align: center;
+    
+}
+
+.team-section h2 p{
+    max-width: 800px;
+    margin: 0 auto 6rem;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.team-member {
+    background: var(--lighter);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.member-image {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.member-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.member-info {
+    padding: 2.5rem 2rem;
+}
+
+.member-info h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--darker);
+}
+
+.member-role {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.member-info p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 6rem 0;
+    background: var(--light);
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.stat-item {
+    background: var(--lighter);
+    padding: 3rem 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 6rem 0;
+    background: linear-gradient(150deg, var(--dark) 0%, var(--gray-dark) 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.cta-section p {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 8rem 0 4rem;
+    }
+    
+    .about-intro {
+        margin-bottom: 4rem;
+    }
+    
+    .about-intro h2 {
+        font-size: 2rem;
+    }
+    
+    .mv-grid,
+    .objectives-grid,
+    .team-grid,
+    .impact-stats {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .mv-card,
+    .objective-item {
+        padding: 2rem 1.5rem;
+    }
+    
+    .member-image {
+        height: 250px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}

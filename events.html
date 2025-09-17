@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements - CI-GBM | Agenda des Activités</title>
+    <meta name="description" content="Découvrez tous les événements organisés par CI-GBM : hackathons, ateliers, conférences et rencontres autour de l'ingénierie biomédicale.">
+    <meta name="keywords" content="CI-GBM, événements, agenda, hackathon, ateliers, conférences, ingénierie biomédicale">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cigbm.netlify.app">
+    <meta property="og:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
+    <meta property="og:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour bien de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
+    <meta property="og:image" content="https://cigbm.netlify.app/images/og-hackhaton.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cigbm.netlify.app">
+    <meta property="twitter:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
+    <meta property="twitter:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour bien de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
+    <meta property="twitter:image" content="https://cigbm.netlify.app/images/og-hackathon.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" sizes="16x16" type="image\png" href="favicon.png">
+    <link rel="icon" sizes="32x32" type="image\png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-img"> <img src="favicon.png" alt="CI-GBM"> </div>
+                </a>
+            </div>
+            
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="nav-overlay" id="nav-overlay">
+            <div class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="nav-overlay-content">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="hackathon.html">Hackathon</a></li>
+                    <li><a href="hall-of-fame.html">Galerie</a></li>
+                    <li><a href="learning-hub.html">Learning Hub</a></li>
+                    <li><a href="events.html">Événements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Événements CI-GBM</h1>
+            <p>Découvrez tous nos hackathons, ateliers, conférences et rencontres.</p>
+        </div>
+    </section>
+        <!-- Filtres des événements 
+    <section class="events-filters">
+        <div class="container">
+            <h2>Calendrier des Événements</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="type-filter">Type:</label>
+                    <select id="type-filter">
+                        <option value="all">Tous les événements</option>
+                        <option value="hackathon">Hackathons</option>
+                        <option value="workshop">Ateliers</option>
+                        <option value="conference">Conférences</option>
+                        <option value="meetup">Rencontres</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="month-filter">Mois:</label>
+                    <select id="month-filter">
+                        <option value="all">Tous les mois</option>
+                        <option value="0">Janvier</option>
+                        <option value="1">Février</option>
+                        <option value="2">Mars</option>
+                        <option value="3">Avril</option>
+                        <option value="4">Mai</option>
+                        <option value="5">Juin</option>
+                        <option value="6">Juillet</option>
+                        <option value="7">Août</option>
+                        <option value="8">Septembre</option>
+                        <option value="9">Octobre</option>
+                        <option value="10">Novembre</option>
+                        <option value="11">Décembre</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="status-filter">Statut:</label>
+                    <select id="status-filter">
+                        <option value="all">Tous</option>
+                        <option value="upcoming">À venir</option>
+                        <option value="past">Passés</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <section class="featured-event">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-info">
+                    <span class="event-badge">Événement à la une</span>
+                    <h2>CI-GBM Mini Hackathon 2025 : Smart Traffic</h2>
+                    <p class="event-date"><i class="far fa-calendar"></i> XX-XX Octobre 2025</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> UAC, EPAC </p>
+                    <p class="event-description">Relevez le défi en créant une solution de gestion intelligente du traffic dans nos villes. Deux semaines de création, de collaboration et d'innovation</p>
+                    <!--<div class="event-stats">
+                        <div class="stat">
+                            <span class="stat-number">120+</span>
+                            <span class="stat-label">Participants</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25</span>
+                            <span class="stat-label">Projets</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Partenaires</span>
+                        </div>
+                    </div>-->
+                    <div class="event-actions">
+                        <a href="hackathon.html" class="cta-button">Voir les détails</a>
+                        <a href="hackathon.html#registration" class="secondary-button">S'inscrire</a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="images/og-hackathon.png" alt="Mini Hackathon CI-GBM 2025">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events-list">
+        <div class="container">
+            <h2>Événements à Venir</h2>
+            
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="event-day"></span>
+                        <span class="event-month">Octobre</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-type workshop">Atelier</span>
+                        <h3>Introduction à l'IoT </h3>
+                        <p class="event-time"><i class="far fa-clock"></i> </p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> En ligne</p>
+                        <p>Découvrez comment concevoir et prototyper des dispositifs connectés avec Arduino et ESP32.</p>
+                        <div class="event-actions">
+                            <a href="contact.html#questions" class="event-link">Plus d'infos</a>
+                            <button class="event-rsvp">S'inscrire</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="event-day"></span>
+                        <span class="event-month">Novembre</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-type workshop">Atelier</span>
+                        <h3>Modélisation et Prototypage 3D </h3>
+                        <p class="event-time"><i class="far fa-clock"></i></p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> En ligne</p>
+                        <p>Apprenez à concevoir et imprimer en 3D des prototypes de dispositifs personnalisés.</p>
+                        <div class="event-actions">
+                            <a href="contact.html#questions" class="event-link">Plus d'infos</a>
+                            <button class="event-rsvp">S'inscrire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="past-events">
+        <div class="container">
+            <h2>Événements Passés</h2>
+            
+            <div class="events-grid past">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/resources/session-1.png" alt="Atelier Arduino Médical">
+                        <span class="event-status past">Terminé</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Sessions Arduino & Préparation Mini Hackathon</h3>
+                        <p class="event-date-past"><i class="far fa-calendar"></i> 17 Août 2025</p>
+                        <p>Introduction à l'utilisation d'Arduino </p>
+                        <div class="event-materials">
+                            <h4>Ressources</h4>
+                            <div class="materials-links">
+                                <a href="ressources/presentation-session-1.pdf"><i class="far fa-file-pdf"></i> Présentation</a>
+                                 <a href="ressources/quiz-session-1.pdf"><i class="far fa-file-pdf"></i> Quiz </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/resources/session-2.png" alt="Atelier Arduino Médical">
+                        <span class="event-status past">Terminé</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Sessions Arduino & Préparation Mini Hackathon</h3>
+                        <p class="event-date-past"><i class="far fa-calendar"></i> 24 Août 2025</p>
+                        <p>Introduction au séquençage et modularité du code Arduino</p>
+                        <div class="event-materials">
+                            <h4>Ressources</h4>
+                            <div class="materials-links">
+                                <a href="ressources/presentation-session-2.pdf"><i class="far fa-file-pdf"></i> Présentation</a>
+                                <a href="ressources/session-2.ino" download><i class="fas fa-code"></i> Code source</a>
+                                <a href="ressources/session-simule-2.mp4" download><i class="fas fa-photo-video"></i> Vidéo de simulation</a>
+                                <a href="ressources/session-2.mp4" download><i class="fas fa-photo-video"></i> Vidéo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/resources/session-3.PNG" alt="Atelier Arduino Médical">
+                        <span class="event-status past">Terminé</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Sessions Arduino & Préparation Mini Hackathon</h3>
+                        <p class="event-date-past"><i class="far fa-calendar"></i> 31 Août 2025</p>
+                        <p>Introduction aux capteurs</p>
+                        <div class="event-materials">
+                            <h4>Ressources</h4>
+                            <div class="materials-links">
+                                <a href="ressources/presentation-session-3.pdf"><i class="far fa-file-pdf"></i> Présentation</a>
+                                <a href="ressources/session-3.ino" download><i class="fas fa-code"></i> Code source</a>
+                                <a href="ressources/session-simule-3.mp4" download><i class="fas fa-photo-video"></i> Vidéo de simulation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/resources/session-4.PNG" alt="Atelier Arduino Médical">
+                        <span class="event-status past">Terminé</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Sessions Arduino & Préparation Mini Hackathon</h3>
+                        <p class="event-date-past"><i class="far fa-calendar"></i> 07 Septembre 2025</p>
+                        <p>Introduction aux méthodes de gestion de projets d'équipe</p>
+                        <div class="event-materials">
+                            <h4>Ressources</h4>
+                            <div class="materials-links">
+                                <a href="ressources/presentation-session-4.pdf"><i class="far fa-file-pdf"></i> Présentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/resources/session-mai.jpg" alt="Session Mai">
+                        <span class="event-status past">Terminé</span>
+                    </div>
+                    <div class="event-info">
+                        <h3> EEA </h3>
+                        <p class="event-date-past"><i class="far fa-calendar"></i> 03 Mai 2025</p>
+                        <p>Introduction aux grandes disciplines de l'ingénierie</p>
+                        <div class="event-materials">
+                            <h4>Ressources</h4>
+                            <div class="materials-links">
+                                <a href="ressources/mai-electronique.pdf"><i class="far fa-file-pdf"></i> Présentation  Electronique</a>
+                                <a href="ressources/mai-informatique.pdf"><i class="far fa-file-pdf"></i> Présentation  Informatique</a>
+                                <a href="ressources/mai-modelisation.pdf"><i class="far fa-file-pdf"></i> Présentation  3D </a>
+                                <a href="ressources/mai-electricite.pdf"><i class="far fa-file-pdf"></i> Présentation  Electricité</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/resources/session-juin.jpg" alt="Session Mai">
+                        <span class="event-status past">Terminé</span>
+                    </div>
+                    <div class="event-info">
+                        <h3> Recap sur les stages académiques </h3>
+                        <p class="event-date-past"><i class="far fa-calendar"></i> 07 Juin 2025</p>
+                        <p>Bonnes pratiques , conseils pour réussir son stage</p>
+                        <div class="event-materials">
+                            <h4>Ressources</h4>
+                            <div class="materials-links">
+                                <a href="ressources/juin-stages.pdf"><i class="far fa-file-pdf"></i> Présentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <section id="registration" class="event-registration">
+        <div class="container">
+            <div class="registration-content">
+                <h2>Restez Informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir les annonces de nos prochains événements et ne rien manquer de l'actualité de CI-GBM.</p>
+                
+                <form class="newsletter-form" action="https://formsubmit.co/nicephore61@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="Mail-news" placeholder="Votre adresse email" required>
+                    </div>
+                    <button type="submit" class="cta-button">S'inscrire à la newsletter</button>
+                </form>
+                
+                <p class="form-disclaimer">Vous pouvez vous désinscrire à tout moment. Nous respectons votre vie privée.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>CI-GBM</h3>
+                    <p>Rejoignez notre communauté dédiée à l'innovation technologique et biomédicale.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="hackathon.html">Hackathon</a></li>
+                        <li><a href="hall-of-fame.html">Galerie</a></li>
+                        <li><a href="learning-hub.html">Learning Hub</a></li>
+                        <li><a href="events.html">Événements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Ressources</h3>
+                    <ul class="footer-links">
+                        <li><a href="ressources/charte-ci-gbm.html">Charte du club</a></li>
+                        <li><a href="ressources/reglement-hackathon.html">Règlement du hackathon</a></li>
+                        <li><a href="ressources/template-readme.html">Template de README</a></li>
+                        <li><a href="learning-hub.html">Tutoriels et guides</a></li>
+                        <li><a href="hall-of-fame.html">Notre galerie</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> +229 01 64 49 19 91</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Université Abomey Calavi, Ecole Polytechnique d'Abomey-Calavi ( EPAC) - Génie Biomédical </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CI-GBM.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+ 

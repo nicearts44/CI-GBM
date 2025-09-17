@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathons - CI-GBM</title>
+    <meta name="description" content="Participez au Mini Hackathon organisé par CI-GBM .">
+    <meta name="keywords" content="CI-GBM, hackathon, innovation santé, biomédical, concours, projets étudiants">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cigbm.netlify.app">
+    <meta property="og:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
+    <meta property="og:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour but de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
+    <meta property="og:image" content="https://cigbm.netlify.app/logo.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cigbm.netlify.app">
+    <meta property="twitter:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
+    <meta property="twitter:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour but de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
+    <meta property="twitter:image" content="https://cigbm.netlify.app/logo.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/hackathon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" sizes="16x16" type="image\png" href="favicon.png">
+    <link rel="icon" sizes="32x32" type="image\png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-img"> <img src="favicon.png" alt="CI-GBM"> </div>
+                </a>
+            </div>
+            
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="nav-overlay" id="nav-overlay">
+            <div class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="nav-overlay-content">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="hackathon.html">Hackathon</a></li>
+                    <li><a href="hall-of-fame.html">Galerie</a></li>
+                    <li><a href="learning-hub.html">Learning Hub</a></li>
+                    <li><a href="events.html">Événements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>MINI HACKATHON CI-GBM 2025 : Smart Traffic </h1>
+            <p>Relevez le défi en créant une solution de gestion intelligente du traffic dans nos villes</p>
+            
+            <div class="hero-buttons">
+                <a href="#registration" class="cta-button"><i class="fas fa-user-plus"></i> S'inscrire</a>
+                <a href="#details" class="secondary-button"><i class="fas fa-info-circle"></i> En savoir plus</a>
+            </div>
+            
+            <div class="countdown">
+                <h2>Début de l'événement dans</h2>
+                <div class="countdown-timer">
+                    <div class="countdown-unit">
+                        <div class="countdown-value" id="days">00</div>
+                        <div class="countdown-label">Jours</div>
+                    </div>
+                    <div class="countdown-unit">
+                        <div class="countdown-value" id="hours">00</div>
+                        <div class="countdown-label">Heures</div>
+                    </div>
+                    <div class="countdown-unit">
+                        <div class="countdown-value" id="minutes">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-unit">
+                        <div class="countdown-value" id="seconds">00</div>
+                        <div class="countdown-label">Secondes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="hackathon-details">
+        <div class="container">
+            <div class="section-title">
+                <h2>Détails de l'Événement</h2>
+                <p>Découvrez tout ce que vous devez savoir sur le Mini-Hackathon CI-GBM 2025</p>
+            </div>
+            
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Quand?</h3>
+                    <p><strong> Du XX au XX Septembre 2025 </strong></p>
+                    <p>Deux Semaines</p>
+                </div>
+                
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Qui?</h3>
+                    <p><strong>Tout étudiant désireux</strong></p>
+                    <p>Équipes de 3-5 personnes</p>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Prix</h3>
+                    <p><strong>Kits de matériels électronique + Certificats distinctifs aux lauréats</strong></p>
+                    <p> Attestions de participation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Programme</h2>
+                <p>Le déroulement détaillé des deux semaines du challenge</p>
+            </div>
+            
+            <div class="schedule-tabs">
+                <button class="tab-button active" data-day="day1">04 Octobre </button>
+                <button class="tab-button" data-day="week"> 04 - 18 Octobre  </button>
+                <button class="tab-button" data-day="dead">18 Octobre</button>
+                <button class="tab-button " data-day="final">25 Octobre</button>
+            </div>
+            
+            <div class="schedule-content">
+                <div id="day1" class="tab-content active">
+                    <div class="schedule-item">
+                        <div class="schedule-time">1 .</div>
+                        <div class="schedule-details">
+                            <h4>Ouverture du challenge </h4>
+                            <p>Mot de bienvenue et présentation des défis</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">2 .</div>
+                        <div class="schedule-details">
+                            <h4>FAQ</h4>
+                            <p>Foire aux questions sur le challenge et le déroulement. La présence de tous les participants est exigée</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">3. </div>
+                        <div class="schedule-details">
+                            <h4>Confimation des équipes</h4>
+                            <p>Constitutions des équipes non formées</br> 
+                               Rencontre avec les chefs d'équipes </br>
+                               Validation des inscriptions de chaque équipe </p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">4 .</div>
+                        <div class="schedule-details">
+                            <h4>Lancement officiel du challenge </h4>
+                            <p>Chaque équipe est désormais prêt à compétir</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="week" class="tab-content">
+                    <!-- Contenu du jour 2 -->
+                    <div class="schedule-item">
+                        <div class="schedule-time"></div>
+                        <div class="schedule-details">
+                            <h4>Déroulement du Challenge</h4>
+                            <p>Le challenge est lancé <br>
+                               Attention à la date limite du dépôt des projets <br>
+                            Travaillez en équipe <br>
+                              Documentez au fur et à mesure votre progression <br>
+                              Surtout soyez libre de poser toutes préoccupations aux organisateurs . Ils vous aideront certainement  </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="dead" class="tab-content">
+                    <!-- Contenu du jour 3 -->
+                    <div class="schedule-item">
+                        <div class="schedule-time">18-10-2025 à 23:59 </div>
+                        <div class="schedule-details">
+                            <h4>Dépôt des livrables </h4>
+                            <p>Après ce délai tout dépôt fait sera pénalisé</p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+
+                <div id="final" class="tab-content">
+                    <!-- Contenu du jour 3 -->
+                    <div class="schedule-item">
+                        <div class="schedule-time">1 . </div>
+                        <div class="schedule-details">
+                            <h4>Pitch et Démo </h4>
+                            <p>Chaque équipe devra présenter devant le jury son projet et répondre aux questions du jury </p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">2 . </div>
+                        <div class="schedule-details">
+                            <h4>Délibération des résultats </h4>
+                            <p>Proclamation des résultats de chaque équipe participante</p>
+                        </div>
+                    </div>
+
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">3 . </div>
+                        <div class="schedule-details">
+                            <h4>Distinctions des équipes lauréates </h4>
+                            <p>Prix aux aux équipes lauréates</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">4 . </div>
+                        <div class="schedule-details">
+                            <h4>Cloture du Challenge </h4>
+                            <p> Avis des participants et Mots de cloture du Challenge</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="prizes-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Prix à Gagner</h2>
+                <p>Des récompenses exceptionnelles pour les projets les plus innovants</p>
+            </div>
+            
+            <div class="prizes-grid">
+                <div class="prize-card first">
+                    <div class="prize-rank">1er</div>
+                    <div class="prize-content">
+                        <h3>Premier Prix</h3>
+                        <ul>
+                            
+                            <li>Kit électronique complet</li>
+                            <li>Enveloppe Financière </li>
+                            <li>Certificat de mérite </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="prize-card second">
+                    <div class="prize-rank">2ème</div>
+                    <div class="prize-content">
+                        <h3>Deuxième Prix</h3>
+                        
+                        <ul>
+                            <li>Enveloppe Financière </li>
+                            <li> Certificat de mérite </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="registration" class="registration-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Inscription</h2>
+                <p>Rejoignez l'aventure Smart Traffic 2025</p>
+            </div>
+            
+            <div class="registration-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Créez votre équipe</h3>
+                        <p>Formez une équipe de 3 à 5 personnes ou inscrivez-vous seul(e) et nous vous aiderons à trouver une équipe.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Remplissez le formulaire</h3>
+                        <p>Complétez le formulaire d'inscription avant le XX Septembre 2025.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Confirmation</h3>
+                        <p>Participez à la séance de lancement pour confirmer votre participation et recevoir également tous les détails pratiques.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="registration-form">
+                <h3>Formulaire d'Inscription - Mini hackathon CI-GBM 2025</h3>
+                <form id="hackathon-registration" action="https://formsubmit.co/nicephore61@gmail.com" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="team-name">Nom de l'équipe <span>*</span></label>
+                            <input type="text" id="team-name" name="team-name" placeholder="Nom et prenom si pas de groupe " required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="team-mail">Adresse Email <span>*</span></label>
+                            <input type="email" id="team-mail" name="team-mail" placeholder="Adresse mail chef d'équipe si en groupe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="team-phone">Numéro Whatsapp <span>*</span></label>
+                            <input type="tel" id="team-phone" name="team-phone" placeholder="Numéro Whatsapp chef d'équipe si en groupe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="team-school">Ecole / Université <span>*</span></label>
+                            <input type="text" id="team-school" name="team-school" placeholder="Votre établissement" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="team-level">Niveau d'étude </label>
+                            <select id="team-level" name="team-level" >
+                                <option value="">Sélectionnez...</option>
+                                <option value="1">Licence 1 </option>
+                                <option value="3">Licence 2</option>
+                                <option value="4">Licence 3</option>
+                                <option value="5">Cycle d'Ingénieur</option>
+                                <option value="6">Autre </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="team-size">Nombre de membres <span>*</span></label>
+                            <select id="team-size" name="team-size" required>
+                                <option value="">Sélectionnez...</option>
+                                <option value="1">1 (recherche d'équipe)</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="team-members">Membres de l'équipe </label>
+                        <textarea id="team-members" name="team-members" rows="4" required placeholder="Prénom Nom, Email, Formation/Spécialité (un membre par ligne)"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="team-why">Pourquoi voulez-vous participer ? <span>*</span></label>
+                        <textarea id="team-why" name="team-why" rows="3" placeholder="Décrivez brièvement la raison pour laquelle vous voulez y participer" required></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="cta-button">Soumettre l'inscription</button>
+                    </div>
+                    
+                    <p class="form-disclaimer">* Les champs marqués d'un astérisque sont obligatoires. Vous recevrez une confirmation par email dans les 48h.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+<!--
+    <section class="sponsors-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Partenaires & Sponsors</h2>
+                <p>Ils soutiennent l'innovation et les talents de demain</p>
+            </div>
+            
+            <div class="sponsors-grid">
+                <div class="sponsor-card">
+                    <img src="images/partners/partner-1.png" alt="Partenaire 1">
+                    <h4>Partenaire Platine</h4>
+                </div>
+                <div class="sponsor-card">
+                    <img src="images/partners/partner-2.png" alt="Partenaire 2">
+                    <h4>Partenaire Or</h4>
+                </div>
+                <div class="sponsor-card">
+                    <img src="images/partners/partner-3.png" alt="Partenaire 3">
+                    <h4>Partenaire Argent</h4>
+                </div>
+                <div class="sponsor-card">
+                    <img src="images/partners/partner-4.png" alt="Partenaire 4">
+                    <h4>Partenaire Technologique</h4>
+                </div>
+            </div>
+            
+            <div class="center-button">
+                <a href="contact.html#partnership" class="cta-button-outline">Devenir partenaire</a>
+            </div>
+        </div>
+    </section>
+-->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Questions Fréquentes</h2>
+                <p>Trouvez des réponses aux questions les plus courantes</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Dois-je être avoir une équipe avant de m'inscrire ?</h3>
+                    <p>Non, ce n'est pas obligatoire. Vous pouvez vous inscrire et nous laisser le choix de vous intégrer dans une équipe .</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Quelles compétences techniques sont nécessaires?</h3>
+                    <p>Le hackathon est ouvert à tous les niveaux. Que vous soyez développeur, designer, expert en électronique  ou simplement passionné d'innovation, il y a une place pour vous. Nous encourageons la diversité des compétences au sein des équipes.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Le hackathon est-il gratuit?</h3>
+                    <p>Oui, la participation est entièrement gratuite. Le matériel électronique indispensable est également offerts grâce à nos sponsors.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Mon équipe peut-il utiliser son propre matériel ?</h3>
+                    <p>Oui, les équipes qui le souhaitent peuvent utiliser leur propre matériel électronique tant que cela n'affecte pas les contraintes du challenge</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Aurions-nous un espace de travail ?</h3>
+                    <p>Non , les équipes devront s'organiser en interne pour définir leurs lieux de travail et progresser dans le challenge . Cependant , les étudiants du GBM participants au challenge pourront beneficier de l'espace technique qu'est l'atelier sous requête. </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Comment seront évalués les présentations?</h3>
+                    <p>Les projets seront évalués sur l'originalité,technique,le design, la qualité de la présentation et son impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>CI-GBM</h3>
+                    <p>Rejoignez notre communauté dédiée à l'innovation technologique et biomédicale.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="hackathon.html">Hackathon</a></li>
+                        <li><a href="hall-of-fame.html">Galerie</a></li>
+                        <li><a href="learning-hub.html">Learning Hub</a></li>
+                        <li><a href="events.html">Événements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Ressources</h3>
+                    <ul class="footer-links">
+                        <li><a href="ressources/Charte-CI-GBM.pdf">Charte du club</a></li>
+                        <li><a href="ressources/Description-technique.pdf">Règlement du hackathon</a></li>
+                        <li><a href="ressources/template-readme.html">Template de README</a></li>
+                        <li><a href="learning-hub.html">Tutoriels et guides</a></li>
+                        <li><a href="hall-of-fame.html">Notre galerie</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> +229 01 64 49 19 91</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Université Abomey Calavi, Ecole Polytechnique d'Abomey-Calavi ( EPAC) - Génie Biomédical </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CI-GBM.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

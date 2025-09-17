@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Hub - CI-GBM| Ressources Pédagogiques</title>
+    <meta name="description" content="Accédez à toutes les ressources pédagogiques de CI-GBM : tutoriels, guides, fiches techniques et supports de formation en ingénierie biomédicale.">
+    <meta name="keywords" content="CI-GBM, learning hub, ressources, tutoriels, formation, ingénierie biomédicale, Arduino, IoT, programmation">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cigbm.netlify.app">
+    <meta property="og:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
+    <meta property="og:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour bien de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
+    <meta property="og:image" content="https://cigbm.netlify.app/images/logo.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cigbm.netlify.app">
+    <meta property="twitter:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
+    <meta property="twitter:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour bien de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
+    <meta property="twitter:image" content="https://cigbm.netlify.app/images/logo.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/learning-hub.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" sizes="16x16" type="image\png" href="favicon.png">
+    <link rel="icon" sizes="32x32" type="image\png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-img"> <img src="favicon.png" alt="CI-GBM"> </div>
+                </a>
+            </div>
+            
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="nav-overlay" id="nav-overlay">
+            <div class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="nav-overlay-content">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="hackathon.html">Hackathon</a></li>
+                    <li><a href="hall-of-fame.html">Galerie</a></li>
+                    <li><a href="learning-hub.html">Learning Hub</a></li>
+                    <li><a href="events.html">Événements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Learning Hub</h1>
+            <p>Accédez à toutes nos ressources pédagogiques pour développer vos compétences en ingénierie biomédicale et technologies connexes.</p>
+        </div>
+    </section>
+
+    <section class="resources-categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Catégories de Ressources</h2>
+                <p>Explorez nos ressources organisées par domaines d'expertise et niveaux de difficulté.</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Électronique & Arduino</h3>
+                    <p>Apprenez les bases de l'électronique et de la programmation Arduino pour vos projets électroniques.</p>
+                    <a href="#electronics" class="cta-button-outline">Explorer</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programmation</h3>
+                    <p>Développez vos compétences en programmation Python, C++ ,C.</p>
+                    <a href="#programming" class="cta-button-outline">En cours</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>IoT & Devices Connectés</h3>
+                    <p>Maîtrisez les technologies IoT pour créer des dispositifs connectés et intelligents.</p>
+                    <a href="#iot" class="cta-button-outline">En cours</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Robotique </h3>
+                    <p>Découvrez les principes de base la robotique appliquée, de l'électromécanique et de la mécatronique.</p>
+                    <a href="#robotics" class="cta-button-outline">En cours</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Apprenez à utiliser l'IA pour l'automatisation, l'analyse d'images et la prédiction.</p>
+                    <a href="#ai" class="cta-button-outline">A venir</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Prototypage & Fabrication</h3>
+                    <p>Maîtrisez l'impression 3D, la conception CAD et les techniques de prototypage rapide.</p>
+                    <a href="#prototyping" class="cta-button-outline">En cours </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="electronics" class="resources-section">
+        <div class="container">
+            <h2 class="section-title-inline">Electronique & Arduino</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-thumbnail">
+                        <img src="images/resources/session-1.png" alt="Arduino Basics">
+                        <span class="resource-level">Débutant</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Introduction à Arduino</h3>
+                        <p>Guide complet pour débuter avec Arduino : installation, premiers programmes et projets simples.</p>
+                        <div class="resource-meta">
+                            <span><i class="far fa-file-pdf"></i> PDF</span>
+                            <span><i class="far fa-clock"></i> 2h</span>
+                        </div>
+                        <a href="ressources/presentation-session-1.pdf" class="resource-download" download>
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-thumbnail">
+                        <img src="images/resources/session-2.png" alt="Arduino Basics">
+                        <span class="resource-level">Intermédiaire</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Séquençage et modularité de code</h3>
+                        <p>Introduction aux fonctions : Optimisations de code, Deboggage.</p>
+                        <div class="resource-meta">
+                            <span><i class="far fa-file-pdf"></i> PDF</span>
+                            <span><i class="far fa-clock"></i> 2h</span>
+                        </div>
+                        <a href="ressources/presentation-session-2.pdf" class="resource-download" download>
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-thumbnail">
+                        <img src="images/resources/session-3.png" alt="Arduino Basics">
+                        <span class="resource-level">Intermédiaire</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Interaction avec le monde extérieur</h3>
+                        <p>Introduction aux capteurs : Types de capteurs , constitutions, petits projets.</p>
+                        <div class="resource-meta">
+                            <span><i class="far fa-file-pdf"></i> PDF</span>
+                            <span><i class="far fa-clock"></i> 2h</span>
+                        </div>
+                        <a href="ressources/presentation-session-3.pdf" class="resource-download" download>
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-thumbnail">
+                        <img src="images/resources/session-4.png" alt="Arduino Basics">
+                        <span class="resource-level">Intermédiaire</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3>De l'idée au prototype</h3>
+                        <p>Introduction aux méthodes de gestion de projets et outils de collaboration (GitHub)</p>
+                        <div class="resource-meta">
+                            <span><i class="far fa-file-pdf"></i> PDF</span>
+                            <span><i class="far fa-clock"></i> 2h</span>
+                        </div>
+                        <a href="#" class="resource-download" download>
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+<!-- Programming Section 
+    <section id="programming" class="resources-section">
+        <div class="container">
+            <h2 class="section-title-inline">Programmation</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-thumbnail">
+                        <img src="images/resources/python-medical.jpg" alt="Python pour applications médicales">
+                        <span class="resource-level">Intermédiaire</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Python pour Applications Médicales</h3>
+                        <p>Utilisation de Python pour le traitement de signaux biomédicaux et l'analyse de données médicales.</p>
+                        <div class="resource-meta">
+                            <span><i class="fab fa-python"></i> Notebooks</span>
+                            <span><i class="far fa-clock"></i> 5h</span>
+                        </div>
+                        <a href="resources/python-medical.zip" class="resource-download" download>
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-thumbnail">
+                        <img src="images/resources/web-apps-medical.jpg" alt="Applications Web Médicales">
+                        <span class="resource-level">Avancé</span>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Applications Web pour la Santé</h3>
+                        <p>Développement d'applications web sécurisées pour la gestion et visualisation de données médicales.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-code"></i> Template</span>
+                            <span><i class="far fa-clock"></i> 6h</span>
+                        </div>
+                        <a href="resources/web-medical-template.zip" class="resource-download" download>
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!--
+    <section class="video-tutorials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tutoriels Vidéo</h2>
+                <p>Apprenez grâce à nos tutoriels vidéo détaillés réalisés par nos experts.</p>
+            </div>
+            
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/resources/video-1.jpg" alt="Tutoriel Arduino">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Monitoring Cardiaque avec Arduino</h3>
+                        <p>Apprenez à créer un dispositif de monitoring cardiaque simple avec Arduino et quelques capteurs.</p>
+                        <div class="video-meta">
+                            <span><i class="far fa-clock"></i> 25 min</span>
+                            <span><i class="far fa-calendar"></i> 15 Oct 2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/resources/video-2.jpg" alt="Tutoriel IoT">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Système IoT de Surveillance Médicale</h3>
+                        <p>Concevez un système complet de surveillance médicale connecté avec alertes en temps réel.</p>
+                        <div class="video-meta">
+                            <span><i class="far fa-clock"></i> 42 min</span>
+                            <span><i class="far fa-calendar"></i> 2 Nov 2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="images/resources/video-3.jpg" alt="Tutoriel IA Médicale">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Introduction à l'IA en Imagerie Médicale</h3>
+                        <p>Découvrez comment l'IA transforme le diagnostic médical grâce à l'analyse d'images.</p>
+                        <div class="video-meta">
+                            <span><i class="far fa-clock"></i> 38 min</span>
+                            <span><i class="far fa-calendar"></i> 20 Nov 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="center-button">
+                <a href="https://youtube.com/c/ci-gbm" class="cta-button" target="_blank">
+                    <i class="fab fa-youtube"></i> Voir toutes les vidéos
+                </a>
+            </div>
+        </div>
+    </section>
+-->
+    <section class="contribution-section">
+        <div class="container">
+            <div class="contribution-content">
+                <h2>Contribuer au Learning Hub</h2>
+                <p>Vous avez créé une ressource pédagogique? Partagez-la avec la communauté CI-GBM et aidez d'autres membres à apprendre et progresser.</p>
+                <a href="contact.html" class="cta-button">Proposer une ressource</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>CI-GBM</h3>
+                    <p>Rejoignez notre communauté dédiée à l'innovation technologique et biomédicale.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="hackathon.html">Hackathon</a></li>
+                        <li><a href="hall-of-fame.html">Galerie</a></li>
+                        <li><a href="learning-hub.html">Learning Hub</a></li>
+                        <li><a href="events.html">Événements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Ressources</h3>
+                    <ul class="footer-links">
+                        <li><a href="ressources/Charte-CI-GBM.pdf">Charte du club</a></li>
+                        <li><a href="ressources/Description-technique.pdf">Règlement du hackathon</a></li>
+                        <li><a href="ressources/template-readme.html">Template de README</a></li>
+                        <li><a href="learning-hub.html">Tutoriels et guides</a></li>
+                        <li><a href="hall-of-fame.html">Notre galerie</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> +229 01 64 49 19 91</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Université Abomey Calavi, Ecole Polytechnique d'Abomey-Calavi ( EPAC) - Génie Biomédical </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CI-GBM.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/animations.js"></script>
+
+</body>
+</html>
+ 

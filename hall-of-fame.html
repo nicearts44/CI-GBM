@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - CI-GBM | Galerie Projets</title>
+    <meta name="description" content="Découvrez les projets innovants réalisés par les membres de CI-GBM. Une vitrine du talent et de la créativité en ingénierie biomédicale.">
+    <meta name="keywords" content="CI-GBM, hall of fame, projets, innovation, génie biomédical, étudiants, prototypes">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cigbm.netlify.app">
+    <meta property="og:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
+    <meta property="og:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour but de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
+    <meta property="og:image" content="https://cigbm.netlify.app/logo.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cigbm.netlify.app">
+    <meta property="twitter:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
+    <meta property="twitter:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour but de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
+    <meta property="twitter:image" content="https://cigbm.netlify.app/logo.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/hall-of-fame.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" sizes="16x16" type="image\png" href="favicon.png">
+    <link rel="icon" sizes="32x32" type="image\png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+   <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-img"> <img src="favicon.png" alt="CI-GBM"> </div>
+                </a>
+            </div>
+            
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="nav-overlay" id="nav-overlay">
+            <div class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="nav-overlay-content">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="hackathon.html">Hackathon</a></li>
+                    <li><a href="hall-of-fame.html">Galerie</a></li>
+                    <li><a href="learning-hub.html">Learning Hub</a></li>
+                    <li><a href="events.html">Événements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Hall of Fame</h1>
+            <p>Découvrez les projets innovants qui ont marqué l'histoire de CI-GBM et qui témoignent du talent de nos membres.</p>
+        </div>
+    </section>
+<!--
+    <section class="filters-section">
+        <div class="container">
+            <h2>Explorer les projets</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category-filter">Catégorie:</label>
+                    <select id="category-filter">
+                        <option value="all">Toutes les catégories</option>
+                        <option value="iot">IoT & Devices Connectés</option>
+                        <option value="ia">Intelligence Artificielle</option>
+                        <option value="robotique">Robotique</option>
+                        <option value="diagnostic">Outils de Diagnostic</option>
+                        <option value="rehabilitation">Réhabilitation</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="year-filter">Année:</label>
+                    <select id="year-filter">
+                        <option value="all">Toutes les années</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort-filter">Trier par:</label>
+                    <select id="sort-filter">
+                        <option value="newest">Plus récents</option>
+                        <option value="oldest">Plus anciens</option>
+                        <option value="popular">Plus populaires</option>
+                    </select>
+                </div>
+                
+                <button id="reset-filters" class="secondary-button">Réinitialiser</button>
+            </div>
+        </div>
+    </section>
+-->
+    <section class="projects-showcase">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-detail" data-category="iot" data-year="2025" data-popularity="95">
+                    <div class="project-image">
+                        <img src="images/projects/project-1.png" alt="Thermomètre numérique ">
+                        <div class="project-overlay">
+                            <a href="#project-1" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Thermomètre numérique</h3>
+                        <p>Thermomètre numérique capable d'afficher la température corporelle ou ambiante sur un écran LCD ou un moniteur série.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">IoT</span>
+                            <span class="project-category">Healthcare</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-1" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Thermomètre numérique</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-1.png" alt="Thermomètre numérique">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Description du projet</h3>
+                                        <p>Ce projet vise à concevoir un thermomètre numérique capable d'afficher la température corporelle ou ambiante sur un écran LCD ou un moniteur série.</p>
+                                        <p>Le thermomètre devra également alerter le personnel soignant  lorsque la mesure prise est stabilisée à travers une interface dédiée </p>
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>Arduino</span>
+                                            <span>Capteur de température DS18B20</span>
+                                            <span>Ecran LCD 16x2</span>
+                                            <span>Buzzer</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-2.png" alt="Outil de diagnostic assisté">
+                        <div class="project-overlay">
+                            <a href="#project-2" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Station météo</h3>
+                        <p>Développement d'une station météo portable mesurant la température et l'humidité, avec affichage sur écran et transmission sans fil pour une consultation à distance</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            <span class="project-category">IoT</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-2" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Station météo</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-2.png" alt="project-2">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Description du projet</h3>
+                                        <p>Ce projet vise à developper une station météo portable mesurant la température et l'humidité, avec affichage sur écran et transmission sans fil (Bluetooth, Wi-Fi ou GSM) pour une consultation à distance .</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>ESP32</span>
+                                            <span>Capteur DHT22</span>
+                                            <span>Module Wi-Fi/Bluetooth</span>
+                                            <span>Écran OLED 0.96"</span>
+                                            <span>Plateforme Blynk/Thinger.io</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-3.png" alt="Radar">
+                        <div class="project-overlay">
+                            <a href="#project-3" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Radar</h3>
+                        <p>Création d’un système radar simplifié utilisant un capteur à ultrasons (HC-SR04) pour détecter la présence d’obstacles et afficher leur position sur un écran ou via une interface PC.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            <span class="project-category">IoT</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-3" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Radar</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-3.png" alt="project-3">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Description du projet</h3>
+                                        <p>Ce projet vise à concevoir un système radar simplifié utilisant un capteur à ultrasons (HC-SR04) pour détecter la présence d’obstacles et afficher leur position sur un écran ou via une interface PC.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>Capteur HC-SR04</span>
+                                            <span>Steppermotor</span>
+                                            <span>Processing</span>
+                                            <span>Python</span>
+                                            <span>Arduino</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-4.png" alt="project-4">
+                        <div class="project-overlay">
+                            <a href="#project-4" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Jeu de lumière</h3>
+                        <p>Conception d’une matrice de LEDs affichant des textes avec des effets d’animation (défilement, clignotement, fondu).</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-4" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Jeu de lumière </h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-4.png" alt="project-4">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Description du projet</h3>
+                                        <p>Conception d’une matrice de LEDs affichant le texte "CI-GBM" avec des effets d’animation (défilement, clignotement, fondu). Peut être étendu à d’autres motifs ou messages.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>Matrice LEDs</span>
+                                            <span>Résistances</span>
+                                            <span>Arduino</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-5.png" alt="project-5">
+                        <div class="project-overlay">
+                            <a href="#project-5" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Détecteur de niveau </h3>
+                        <p>Developpement d’un dispositif detectant l’inclinaison d’un support et affichage de l’angle ou allumage de LEDs indicatrices.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-5" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Détecteur de niveau </h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-5.png" alt="project-5">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Description du projet</h3>
+                                        <p>Developpement d’un dispositif detectant l’inclinaison d’un support à l’aide d’un capteur à inclinaison (accéléromètre), avec affichage de l’angle ou allumage de LEDs indicatrices.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>LEDs RVB</span>
+                                            <span>MPU-6050</span>
+                                            <span>Arduino</span>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-6.png" alt="project-6">
+                        <div class="project-overlay">
+                            <a href="#project-6" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Canne intelligente  </h3>
+                        <p>Création d’une canne pour malvoyants équipée de capteurs à ultrasons pour détecter les obstacles et alertant l’utilisateur via un signal sonore ou une vibration.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-6" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Canne intelligente</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-6.png" alt="project-6">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Canne intelligente</h3>
+                                        <p>Création d’une canne pour malvoyants équipée de capteurs à ultrasons pour détecter les obstacles et alertant l’utilisateur via un signal sonore ou une vibration.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>Buzzer</span>
+                                            <span>HC-SR04</span>
+                                            <span>Arduino</span>
+                                            <span>Moteur vibrant</span>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 7 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-7.png" alt="project-7">
+                        <div class="project-overlay">
+                            <a href="#project-7" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Horlorge numérique  </h3>
+                        <p>Réalisation d’une horloge numérique affichant l’heure, la date, et proposant des fonctions additionnelles comme réveil, chronomètre et alarmes avec melodies.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-7" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Horlorge numérique</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-7.png" alt="project-7">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Horlorge numérique</h3>
+                                        <p>Réalisation d’une horloge numérique affichant l’heure, la date, et proposant des fonctions additionnelles comme réveil, chronomètre et alarmes avec melodies.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>RTC DS3231</span>
+                                            <span>Haut-parleur</span>
+                                            <span>Arduino</span>
+                                            <span>OLED 128x64</span>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 8 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-8.png" alt="project-8">
+                        <div class="project-overlay">
+                            <a href="#project-8" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Snake Zenzia  </h3>
+                        <p>Développement d’une version du jeu Snake sur un écran OLED, contrôlée par un joystick, avec gestion des scores et effets sonores.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            <span class="project-category">Game</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-8" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Snake Zenzia</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-8.png" alt="project-8">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Snake Zenzia</h3>
+                                        <p>Développement d’une version du jeu Snake sur un écran OLED, contrôlée par un joystick, avec gestion des scores et effets sonores.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>joystick</span>
+                                            <span>Buzzer</span>
+                                            <span>Arduino</span>
+                                            <span>OLED 128x64</span>
+                                          
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 9 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-9.png" alt="project-9">
+                        <div class="project-overlay">
+                            <a href="#project-9" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Voiture suiveuse de ligne  </h3>
+                        <p>Construction d’une voiture robot autonome capable de suivre une ligne noire sur piste, avec évitement d’obstacles et communication sans fil.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            <span class="project-category">Game</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-9" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Voiture suiveuse de ligne </h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-9.png" alt="project-9">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Voiture suiveuse de ligne </h3>
+                                        <p>Construction d’une voiture robot autonome capable de suivre une ligne noire sur piste, avec évitement d’obstacles et communication sans fil.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>TCRT5000</span>
+                                            <span>Buzzer</span>
+                                            <span>Arduino</span>
+                                            <span>Moteurs DC et Driver </span>
+                                            <span>HC-05</span>
+                                         
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Projet 10 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-10.png" alt="project-10">
+                        <div class="project-overlay">
+                            <a href="#project-10" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3> Control d'accès RFID  </h3>
+                        <p>Système de sécurité permettant l’accès à un local technique uniquement avec une carte RFID autorisée, avec signal sonore en cas de refus.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            <span class="project-category">Security</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-10" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Snake Zenzia</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-10.png" alt="project-10">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Control d'accès RFID</h3>
+                                        <p>Système de sécurité permettant l’accès à un local technique uniquement avec une carte RFID autorisée, avec signal sonore en cas de refus</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>RFID RC522</span>
+
+                                            <span>Servo SG90</span>
+                                            <span>Arduino</span>
+                                            <span>Buzzer</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Projet 11 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-11.png" alt="project-11">
+                        <div class="project-overlay">
+                            <a href="#project-11" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3> Station de désinfection automatique  </h3>
+                        <p>Dispositif distribuant automatiquement du gel hydroalcoolique via un capteur infrarouge detectant la présence d’une main.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            <span class="project-category">Healthcare</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-11" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Station de désinfection automatique</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-11.png" alt="project-11">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Station de désinfection automatique</h3>
+                                        <p>Dispositif distribuant automatiquement du gel hydroalcoolique via un capteur infrarouge detectant la présence d’une main.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>IR KY-032</span>
+                                            <span>Pompe 12V</span>
+                                            <span>Arduino</span>
+                                            <span>Relais 5V</span>
+
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Projet 12 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-12.png" alt="project-12">
+                        <div class="project-overlay">
+                            <a href="#project-12" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3> Système de suivi d'éclairage  </h3>
+                        <p>Système automatique allumant les lumières dans les couloirs lors de la detection de mouvement, pour économie d’énergie et confort.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            <span class="project-category">Domotique</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-12" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Système de suivi d'éclairage</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-12.png" alt="project-12">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Système de suivi d'éclairage</h3>
+                                        <p>Système automatique allumant les lumières dans les couloirs lors de la detection de mouvement, pour économie d’énergie et confort.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>ESP32</span>
+
+                                            <span>PIR HC-SR501</span>
+                                            <span>Lampe LED</span>
+                                            <span>Relais</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 13 -->
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-13.png" alt="project-13">
+                        <div class="project-overlay">
+                            <a href="#project-13" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3> Interface de déclaration de pannes  </h3>
+                        <p>Application web simple permettant aux utilisateurs de déclarer des pannes techniques sans base de données, stockant les données localement.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Electronique</span>
+                            <span class="project-category">Domotique</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-13" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Interface de déclaration de pannes</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-13.png" alt="project-13">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Interface de déclaration de pannes</h3>
+                                        <p>Application web simple permettant aux utilisateurs de déclarer des pannes techniques sans base de données, stockant les données localement.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>Serveur local</span>
+
+                                            <span>HTML/CSS/JS</span>
+                                            <span>JSON</span>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Projet 14 -->
+              
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-14.png" alt="project-14">
+                        <div class="project-overlay">
+                            <a href="#project-14" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3> Mini GMAO local  </h3>
+                        <p>Plateforme logicielle locale pour gérer la maintenance d’un petit parc d’équipements avec suivi des interventions et alertes.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">Dev Web</span>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-14" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Mini GMAO local</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-14.png" alt="project-14">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Mini GMAO local</h3>
+                                        <p>Plateforme logicielle locale pour gérer la maintenance d’un petit parc d’équipements (5 à 10), avec suivi des interventions et alertes.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>Serveur local</span>
+
+                                            <span>HTML/CSS/JS</span>
+                                            <span>JSON/ SQL</span>
+                                             <span>Python</span>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!-- Projet 15 -->
+              
+                <div class="project-detail" data-category="ia" data-year="2025" data-popularity="88">
+                    <div class="project-image">
+                        <img src="images/projects/project-15.png" alt="project-15">
+                        <div class="project-overlay">
+                            <a href="#project-15" class="project-view-details">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3> Detecteur de chute  </h3>
+                        <p>Boîtier portable pour personnes à mobilité réduite, detectant les chutes et mouvements brusques et alertant le personnel soignant via alarme.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-category">IoT</span>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Modal pour ce projet -->
+                    <div id="project-15" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Detecteur de chute</h2>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <div class="project-gallery">
+                                    <img src="images/projects/project-15.png" alt="project-15">
+                                    <!--<div class="gallery-thumbnails">
+                                        <img src="images/projects/project-1-1.jpg" alt="Détail du dispositif">
+                                        <img src="images/projects/project-1-2.jpg" alt="Interface de visualisation">
+                                        <img src="images/projects/project-1-3.jpg" alt="Équipe de développement">
+                                    </div>-->
+                                </div>
+                                
+                                <div class="project-details">
+                                    <div class="detail-section">
+                                        <h3>Detecteur de chute</h3>
+                                        <p>Boîtier portable pour personnes à mobilité réduite, detectant les chutes et mouvements brusques et alertant le personnel soignant via alarme.</p>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="detail-section">
+                                        <h3>Équipe</h3>
+                                        <div class="team-members">
+                                            <div class="member">
+                                                <div class="member-avatar">L</div>
+                                                <div class="member-info">
+                                                    <h4>Léa Martin</h4>
+                                                    <p>Chef de projet & Développement hardware</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">T</div>
+                                                <div class="member-info">
+                                                    <h4>Thomas Dubois</h4>
+                                                    <p>Développement software & IoT</p>
+                                                </div>
+                                            </div>
+                                            <div class="member">
+                                                <div class="member-avatar">S</div>
+                                                <div class="member-info">
+                                                    <h4>Sophie Kwame</h4>
+                                                    <p>Design UX/UI & Tests utilisateurs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                                    <div class="detail-section">
+                                        <h3>Technologies utilisées</h3>
+                                        <div class="tech-tags">
+                                            <span>Arduino Nano 33 BLE Sense</span>
+
+                                            <span>Capteur IMU intégré</span>
+                                            <span>Buzzer</span>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-section">
+                                        <h3>Ressources</h3>
+                                        <div class="project-resources">
+                                            <a href="#" class="resource-link"><i class="fab fa-github"></i> Code source</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+                                            <a href="#" class="resource-link"><i class="fas fa-video"></i> Vidéo de démonstration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plus de projets seraient ajoutés ici -->
+            </div>
+            <!--
+            <div class="pagination">
+                <button class="pagination-button active">1</button>
+                <button class="pagination-button">2</button>
+                <button class="pagination-button">3</button>
+                <button class="pagination-button next">Suivant <i class="fas fa-arrow-right"></i></button>
+            </div>
+        -->
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Vous avez un projet innovant?</h2>
+            <p>Rejoignez CI-GBM pour concrétiser vos idées et peut-être voir votre projet figurer dans notre Hall of Fame!</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="cta-button">Nous rejoindre</a>
+                <a href="hackathon.html" class="secondary-button">Prochain hackathon</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>CI-GBM</h3>
+                    <p>Rejoignez notre communauté dédiée à l'innovation technologique et biomédicale.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="hackathon.html">Hackathon</a></li>
+                        <li><a href="hall-of-fame.html">Galerie</a></li>
+                        <li><a href="learning-hub.html">Learning Hub</a></li>
+                        <li><a href="events.html">Événements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Ressources</h3>
+                    <ul class="footer-links">
+                        <li><a href="ressources/Charte-CI-GBM.pdf">Charte du club</a></li>
+                        <li><a href="ressources/Description-technique.pdf">Règlement du hackathon</a></li>
+                        <li><a href="ressources/template-readme.html">Template de README</a></li>
+                        <li><a href="learning-hub.html">Tutoriels et guides</a></li>
+                        <li><a href="hall-of-fame.html">Notre galerie</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> +229 01 64 49 19 91</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Université Abomey Calavi, Ecole Polytechnique d'Abomey-Calavi ( EPAC) - Génie Biomédical </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CI-GBM.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+ 
