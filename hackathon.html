@@ -12,14 +12,14 @@
     <meta property="og:url" content="https://cigbm.netlify.app">
     <meta property="og:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
     <meta property="og:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour but de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
-    <meta property="og:image" content="https://cigbm.netlify.app/logo.jpg">
+    <meta property="og:image" content="https://cigbm.netlify.app/images/og-hackathon.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://cigbm.netlify.app">
     <meta property="twitter:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
     <meta property="twitter:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour but de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
-    <meta property="twitter:image" content="https://cigbm.netlify.app/logo.jpg">
+    <meta property="twitter:image" content="https://cigbm.netlify.app/images/og-hackathon.png">
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -328,7 +328,11 @@
             
             <div class="registration-form">
                 <h3>Formulaire d'Inscription - Mini hackathon CI-GBM 2025</h3>
-                <form id="hackathon-registration" action="https://formsubmit.co/nicephore61@gmail.com" method="POST">
+                <form id="hackathon-registration" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="7d10ed97-1c5a-44a8-80e4-377d588f0444">
+                    <input type="hidden" name="subject" value="Inscription au Mini-Hackathon CI-GBM 2025">
+                        <input type="hidden" name="replyto" value="nicephore61@gmail.com">
+                        <input type="hidden" name="from_name" value="CI-GBM Website">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="team-name">Nom de l'équipe <span>*</span></label>
@@ -382,7 +386,8 @@
                         <label for="team-why">Pourquoi voulez-vous participer ? <span>*</span></label>
                         <textarea id="team-why" name="team-why" rows="3" placeholder="Décrivez brièvement la raison pour laquelle vous voulez y participer" required></textarea>
                     </div>
-                    
+                    <input type="hidden" name="redirect" value="https://cigbm.netlify.app/hackathon-confirmation.html">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
                     <div class="form-submit">
                         <button type="submit" class="cta-button">Soumettre l'inscription</button>
                     </div>

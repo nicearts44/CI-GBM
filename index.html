@@ -217,11 +217,19 @@
                 <h2>Restez informé</h2>
                 <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités, les annonces d'événements et les ressources exclusives.</p>
                 
-                <form class="newsletter-form" id="newsletter-form" action="https://formsubmit.co/nicephore61@gmail.com" method="POST">
-                    <input type="email" placeholder="Votre adresse email" name="Mail-news" required>
-                    <button type="submit">S'inscrire <i class="fas fa-paper-plane"></i></button>
+
+                <form class="newsletter-form" id="newsletter-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="7d10ed97-1c5a-44a8-80e4-377d588f0444">
+                    <div class="form-group">
+                        <input type="hidden" name="subject" value="Demande d'inscription à la newsletter du CI-GBM">
+                        <input type="hidden" name="replyto" value="nicephore61@gmail.com">
+                        <input type="hidden" name="from_name" value="CI-GBM Website">
+                        <input type="email" name="email" placeholder="Votre adresse email" required>
+                        <input type="hidden" name="redirect" value="https://cigbm.netlify.app/newsletter-confirmation.html">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+                    </div>
+                    <button type="submit" >S'inscrire <i class="fas fa-paper-plane"></i></button>
                 </form>
-                
                 <p class="newsletter-disclaimer">Nous respectons votre vie privée. Vous pouvez vous désinscrire à tout moment.</p>
             </div>
         </div>

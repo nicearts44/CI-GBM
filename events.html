@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://cigbm.netlify.app">
     <meta property="og:title" content="CI-GBM - Club d'Ingénierie du Génie Biomédical">
     <meta property="og:description" content="CI-GBM est un club d'étudiants en maintenance biomédicale qui a pour bien de stimuler l'apprentissage collaboratif et par la pratique. Rejoignez notre communauté dédiée à tous les passionnés de l'ingénierie.">
-    <meta property="og:image" content="https://cigbm.netlify.app/images/og-hackhaton.png">
+    <meta property="og:image" content="https://cigbm.netlify.app/images/og-hackathon.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -331,9 +331,15 @@
                 <h2>Restez Informé</h2>
                 <p>Inscrivez-vous à notre newsletter pour recevoir les annonces de nos prochains événements et ne rien manquer de l'actualité de CI-GBM.</p>
                 
-                <form class="newsletter-form" action="https://formsubmit.co/nicephore61@gmail.com" method="POST">
+                <form class="newsletter-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="7d10ed97-1c5a-44a8-80e4-377d588f0444">
                     <div class="form-group">
-                        <input type="email" name="Mail-news" placeholder="Votre adresse email" required>
+                        <input type="hidden" name="subject" value="Demande d'inscription à la newsletter du CI-GBM">
+                        <input type="hidden" name="replyto" value="nicephore61@gmail.com">
+                        <input type="hidden" name="from_name" value="CI-GBM Website">
+                        <input type="email" name="email" placeholder="Votre adresse email" required>
+                        <input type="hidden" name="redirect" value="https://cigbm.netlify.app/newsletter-confirmation.html">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
                     </div>
                     <button type="submit" class="cta-button">S'inscrire à la newsletter</button>
                 </form>

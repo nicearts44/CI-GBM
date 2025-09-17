@@ -126,8 +126,12 @@
                 <h2>Devenez Membre de CI-GBM</h2>
                 <p>Rejoignez notre communauté d'innovateurs en remplissant le formulaire ci-dessous.</p>
             </div>
-            
-            <form class="contact-form" id="membership-form" action="https://formsubmit.co/nicephore61@gmail.com" method="POST">
+
+            <form class="contact-form" id="membership-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="7d10ed97-1c5a-44a8-80e4-377d588f0444">
+                <input type="hidden" name="subject" value="Demande d'inscription au CI-GBM">
+                        <input type="hidden" name="replyto" value="nicephore61@gmail.com">
+                        <input type="hidden" name="from_name" value="CI-GBM Website">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="member-name">Nom complet *</label>
@@ -207,7 +211,8 @@
                     <label for="member-motivation">Pourquoi souhaitez-vous rejoindre CI-GBM? *</label>
                     <textarea id="member-motivation" name="motivation" rows="4" required></textarea>
                 </div>
-                
+                 <input type="hidden" name="redirect" value="https://cigbm.netlify.app/membership-confirmation.html">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
                 <div class="form-submit">
                     <button type="submit" class="cta-button">Rejoindre CI-GBM</button>
                 </div>
@@ -221,8 +226,12 @@
                 <h2>Nous Écrire</h2>
                 <p>Utilisez ce formulaire pour nous poser vos questions ou demander des informations.</p>
             </div>
-            
-            <form class="contact-form" id="question-form" action="https://formsubmit.co/nicephore61@gmail.com" method="POST">
+
+            <form class="contact-form" id="question-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="7d10ed97-1c5a-44a8-80e4-377d588f0444">
+                <input type="hidden" name="subject" value="Demande de renseignement sur le CI-GBM ">
+                        <input type="hidden" name="replyto" value="nicephore61@gmail.com">
+                        <input type="hidden" name="from_name" value="CI-GBM Website">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="question-name">Nom *</label>
@@ -243,7 +252,8 @@
                     <label for="question-message">Message *</label>
                     <textarea id="question-message" name="message" rows="5" required></textarea>
                 </div>
-                
+                <input type="hidden" name="redirect" value="https://cigbm.netlify.app/partnership-confirmation.html">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
                 <div class="form-submit">
                     <button type="submit" class="cta-button">Envoyer le message</button>
                 </div>
