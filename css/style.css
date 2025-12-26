@@ -1,23 +1,30 @@
 
 :root {
-   --primary: #2563EB;
-    --primary-dark: #1E40AF;
-    --primary-light: #60A5FA;
-    --secondary: #10B981;
+   --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #3b82f6;
+    --secondary: #059669;
     --secondary-dark: #047857;
-    --secondary-light: #6EE7B7;
-    --accent: #F43F5E;
-    --accent-dark: #BE123C;
-    --accent-light: #FB7185;
-    --light: #FFFFFF;
-    --dark: #111827;
-    --gray: #6B7280;
-    --gray-dark: #374151;
-    --gray-light: #9CA3AF;
-    --light-gray: #F3F4F6;
-    --border-gray: #E5E7EB;
-    --lighter: #F9FAFB;
-    --darker: #030712;
+    --secondary-light: #10b981;
+    --accent: #f59e0b;
+    --accent-dark: #d97706;
+    --accent-light: #fbbf24;
+    --light: #f8fafc;
+    --dark: #0f172a;
+    --gray: #64748b;
+    --gray-dark: #334155;
+    --gray-light: #cbd5e1;
+    --light-gray: #f1f5f9;
+    --border-gray: #e2e8f0;
+    --lighter: #ffffff;
+    --darker: #020617;
+    --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    --gradient-hero: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+    --gradient-card: linear-gradient(135deg, #ffffff 0%, var(--light-gray) 100%);
+    
+    --border-gradient: linear-gradient(135deg, var(--primary), var(--accent));
+    --border-radius-modern: 12px;
+    --border-radius-pill: 50px;
     
     /* Typographie */
     --font-heading: 'Montserrat', sans-serif;
@@ -46,7 +53,7 @@
     /* Transitions */
     --transition-fast: all 0.2s ease;
     --transition: all 0.3s ease;
-    --transition-slow: all 0.5s ease;
+    --transition-slow: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -61,7 +68,7 @@ html {
 
 body {
     font-family: var(--font-body);
-    background-color: var(--dark);
+    background-color: var(--light);
     color: var(--lighter);
     line-height: 1.7;
     font-size: 16px;
@@ -283,27 +290,59 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--dark) 0%, var(--gray-dark) 100%);
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="none" width="100" height="100"/><rect fill="rgba(255,255,255,0.05)" width="50" height="50"/><rect fill="rgba(255,255,255,0.05)" x="50" y="50" width="50" height="50"/></svg>');
-    color: white;
+    background-size:cover;
+    background-position: center;
     border-radius: 0 0 30px 30px;
+    animation: slide 100s infinite ease-in-out;
+}
+@keyframes slide{
+    0%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/Photo_ensemble1_Mini-hackathon_2025.jpg");
+    }
+    10%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/Photo_ensemble2_Mini-hackathon_2025.jpg");
+    }
+    20%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/Photo_ensemble3_Mini-hackathon_2025.jpg");
+    }
+    30%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/Jury_1.jpg");
+    }
+    40%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/Jury_2.jpg");
+    }
+    50%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/Jury_3.jpg");
+    }
+    60%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/Jury_4.jpg");
+    }
+    70%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/People_1.jpg");
+    }
+    80%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/People_2.jpg");
+    }
+    90%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/Jury_5.jpg");
+    }
+    100%{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("../images/hackathon/Gallerie_2025/People_3.jpg");
+    }
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     line-height: 1.2;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--gray-light);
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     max-width: 700px;
     margin: 0 auto 40px;
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 .hero-buttons {
@@ -315,7 +354,7 @@ header {
 }
 
 .cta-button {
-    background: var(--accent);
+    background: var(--accent-dark);
     color: white;
     border: none;
     padding: 12px 25px;
@@ -330,14 +369,14 @@ header {
 }
 
 .cta-button:hover {
-    background: var(--accent-dark);
+    background: var(--darker);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .secondary-button {
-    background: transparent;
-    color: white;
+    background: var(--primary-dark);
+    color: var(--light);
     border: 2px solid rgba(255, 255, 255, 0.3);
     padding: 12px 25px;
     border-radius: 50px;
@@ -351,8 +390,9 @@ header {
 }
 
 .secondary-button:hover {
-    border-color: white;
+    border-color: var(--border-gradient);
     background: rgba(255, 255, 255, 0.1);
+    color:var(--light-gray)
 }
 
 .countdown {
@@ -425,7 +465,7 @@ header {
 .section-title h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(100deg, var(--primary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -471,12 +511,12 @@ header {
 .mission-icon {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: var(--accent-light);
+    color: var(--light);
 }
 
 .mission-card h3 {
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--accent-light);
 }
 
@@ -484,11 +524,11 @@ header {
     color: var(--light-gray);
     flex-grow: 1;
     margin-bottom: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .read-more {
-    color: var(--accent);
+    color: var(--primary-light);
     text-decoration: none;
     font-weight: 600;
     display: inline-flex;
@@ -498,12 +538,15 @@ header {
 }
 
 .read-more:hover {
-    color: var(--accent-dark);
+    color: var(--primary-dark);
     gap: 10px;
 }
 
 .center-button {
     text-align: center;
+    
+   
+
 }
 
 /* Featured Projects Section */
@@ -614,7 +657,7 @@ header {
 /* Newsletter Section */
 .newsletter-section {
     padding: 80px 0;
-    background: var(--gray-dark);
+    background: var(--darker);
     color: white;
     text-align: center;
 }
@@ -622,7 +665,7 @@ header {
 .newsletter-content h2 {
     margin-bottom: 20px;
     font-size: 2rem;
-    background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -668,9 +711,10 @@ header {
 }
 
 .newsletter-disclaimer {
-    margin-top: 15px;
+   
     font-size: 0.8rem;
     opacity: 0.7;
+    align-items: center;
 }
 
 /* Footer Styles */
@@ -708,7 +752,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: var(--secondary);
+    color: var(--accent-dark);
 }
 
 .footer-contact {

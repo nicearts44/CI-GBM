@@ -468,27 +468,323 @@
     margin-top: 1.5rem;
 }
 
+/* Past Events Summary */
+.past-events {
+    padding: 6rem 0;
+    background: var(--dark);
+}
+.past-events .event-summary {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    color: var(--gray);
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Annotated Gallery */
+.annotated-gallery {
+    padding: 6rem 0;
+    background: var(--darker);
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius-lg);
+    background: var(--dark);
+    box-shadow: var(--shadow);
+}
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+.gallery-overlay {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 1rem 1.25rem;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.65) 100%);
+    color: var(--lighter);
+}
+.gallery-overlay h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.05rem;
+    color: var(--primary-light);
+}
+.gallery-overlay p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--light);
+}
+
+/* =========================
+   PODIUM
+========================= */
+.podium-section {
+  background: linear-gradient(135deg, #0b0f19, #111827);
+  padding: 5rem 0;
+}
+
+.podium-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.podium-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 2.5rem 1.8rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.podium-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+}
+
+.podium-rank1 {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 54px;
+  height: 54px;
+  background: var(--accent);
+  color: #faf8f8;
+  font-weight: 800;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.podium-rank2 {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 54px;
+  height: 54px;
+  background: var(--secondary-dark);
+  color: #f1eded;
+  font-weight: 900;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.podium-rank3 {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 54px;
+  height: 54px;
+  background: rgb(241, 58, 58);
+  color: #fcfafa;
+  font-weight: 800;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.podium-card h3 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.podium-card p {
+  font-size: 0.95rem;
+  color: #ced4da;
+  margin: 1rem 0 1.8rem;
+}
+
+/* Highlight du 1er */
+.podium-card.first {
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 50px rgba(245, 197, 66, 0.25);
+}
+/* Highlight du 2ème */
+.podium-card.second {
+  border: 2px solid var(--secondary);
+  box-shadow: 0 0 70px rgba(245, 197, 66, 0.25);
+}
+/* Highlight du 3ème */
+.podium-card.third {
+  border: 2px solid rgb(241, 58, 58);
+  box-shadow: 0 0 50px rgba(245, 197, 66, 0.25);
+}
+/* =========================
+   LEADERBOARD PARTENAIRES
+========================= */
+.partner-leaderboard {
+  background: var(--darker);
+  padding: 5rem 0;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.partner-card {
+  background: #ffffff;
+  border-radius: var(--radius);
+  padding: 2.2rem 1.8rem;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+.partner-card:hover {
+  transform: translateY(-8px);
+}
+
+.partner-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.partner-card h4 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.partner-card p {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+/* =========================
+   ÉQUIPES
+========================= */
+.teams-section {
+  padding: 5rem 0;
+  background: var(--darker);
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: var(--dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+}
+
+.team-image {
+  height: 400px;
+  overflow: hidden;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.team-card:hover img {
+  transform: scale(1.08);
+}
+
+.team-info {
+  padding: 1.6rem;
+}
+
+.team-info h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.team-info p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin: 0.8rem 0 1.4rem;
+}
+
+.team-actions {
+  text-align: right;
+}
+
+/* =========================
+   BOUTON OUTLINE
+========================= */
+.cta-button-outline {
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+.cta-button-outlineaccent {
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  color: var(--light);
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+
+.cta-button-outline:hover {
+  background: var(--primary);
+  color: #ffffff;
+} 
+
+
+
 /* Sponsors Section */
 .sponsors-section {
-    padding: 6rem 0;
-    background: var(--light);
+    padding: 3rem 0;
+    background: var(--dark);
 }
 
 .sponsors-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3rem;
-    margin: 4rem 0;
+    margin: 2rem 0;
 }
 
 .sponsor-card {
-    background: var(--lighter);
+    background: var(--darker);
     padding: 2rem;
     border-radius: var(--border-radius);
     text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    align-items: center;
 }
 
 .sponsor-card:hover {
@@ -497,12 +793,15 @@
 }
 
 .sponsor-card img {
+    display: block;
     max-width: 100%;
     height: 80px;
     object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 1rem;
-    filter: grayscale(100%);
     transition: var(--transition);
+    
 }
 
 .sponsor-card:hover img {
