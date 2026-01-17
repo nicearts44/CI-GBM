@@ -270,7 +270,13 @@
 }
 
 .member-image {
-    height: 310px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.kaleb {
+    height: 550px;
     overflow: hidden;
     position: relative;
 }
@@ -432,5 +438,4 @@
     .stat-number {
         font-size: 2.5rem;
     }
-
 }
